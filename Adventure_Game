@@ -1,0 +1,25 @@
+#Advenure game
+
+print("Welcome to the Maura Kelly adventure game!")
+print("Your mission is to find Maura and win her over.")
+choice1 = input('You\'re at the airport. Do you want to buy a ticket to Dublin or go home and watch Netflix?'
+                'Please type "Dublin" or "Netflix"\n').lower()
+
+if choice1 == "dublin":
+    choice2 = input('You\'ve arrived at the airport. Do you want to go to see Maura or go to the pub? '
+                  'Please type "Maura" or "Pub"\n').lower()
+    if choice2 == "maura":
+        choice3 = input('The date goes brilliantly. Do you ask Maura out again?'
+                       ' block her on all social media platforms?'
+                       ' or Phone a friend'
+                       ' Please type "Out" or "Block" or "Friend"\n').lower()
+        if choice3 == "block":
+            print("seriously dude, you aren't ever going to be an influencer online. Get a life! GAME OVER!")
+        elif choice3 == "friend":
+            print("You don't have any friends. GAME OVER!")
+        else:
+            print("You're a smart boy! Maura is amazing. You've made an excellent choice"
+                " and have won the game (of life)!!")
+    else:
+        print("I think you have a drink problem dude! GAME OVER!!")
+else: print("Live a little. You dont fail in life until you give up. GAME OVER!!!")
